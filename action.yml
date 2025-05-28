@@ -10,6 +10,9 @@ inputs:
     description: GHA Step ID
     required: false
     default: ''
+  binary-tar-path:
+    description: 'Path to the binary tar file to scan'
+    required: true
 
 runs:
   using: "composite"
