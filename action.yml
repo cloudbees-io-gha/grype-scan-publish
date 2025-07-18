@@ -1,5 +1,5 @@
 name: 'Grype scan and publish to Platform'
-description: 'Runs Grype scan to detect vulnerabilities and publishes to the CloudBees platform.'
+description: 'Performs container image vulnerability scanning using Grype and publishes the results to the CloudBees Platform.'
 
 inputs:  
   cloudbees-url: 
