@@ -64,6 +64,8 @@ runs:
           -e GITHUB_JOB="${{ github.job }}" \
           -e GITHUB_PROVIDER="GITHUB" \
           -e GITHUB_WORKSPACE="${{ github.workspace }}" \
+          -v $GITHUB_OUTPUT:$GITHUB_OUTPUT \
+          -e GITHUB_OUTPUT="$GITHUB_OUTPUT" \
           -e GITHUB_ENV="$GITHUB_ENV" \
           -e ACTIONS_ID_TOKEN_REQUEST_TOKEN=$ACTIONS_ID_TOKEN_REQUEST_TOKEN \
           -e ACTIONS_ID_TOKEN_REQUEST_URL=$ACTIONS_ID_TOKEN_REQUEST_URL \
@@ -102,6 +104,8 @@ runs:
           -e GITHUB_JOB="${{ github.job }}" \
           -e GITHUB_PROVIDER="GITHUB" \
           -e GITHUB_WORKSPACE="${{ github.workspace }}" \
+          -v $GITHUB_OUTPUT:$GITHUB_OUTPUT \
+          -e GITHUB_OUTPUT="$GITHUB_OUTPUT" \
           -e GITHUB_ENV="$GITHUB_ENV" \
           -e ACTIONS_ID_TOKEN_REQUEST_TOKEN=$ACTIONS_ID_TOKEN_REQUEST_TOKEN \
           -e ACTIONS_ID_TOKEN_REQUEST_URL=$ACTIONS_ID_TOKEN_REQUEST_URL \
