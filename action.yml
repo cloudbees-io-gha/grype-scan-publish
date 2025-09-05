@@ -78,7 +78,7 @@ runs:
           -e RUN_ID="${{ github.run_id }}" \
           -e JOB_ID="${{ github.job }}" \
           -e STEP_ID="${{ inputs.step-id }}" \
-          public.ecr.aws/l7o7z1g8/actions/assets-grype-scanner:c0a7492658472fbb0d6efd822c36207c83d44cea \
+          public.ecr.aws/l7o7z1g8/actions/assets-grype-scanner:f7a2d9dec7b30963076ef333557366684b26521d \
           --mode single
 
     - id: process-outputs
