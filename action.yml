@@ -59,7 +59,7 @@ runs:
           -e GITHUB_SERVER_URL="${{ github.server_url }}/${{ github.repository }}" \
           -e GITHUB_JOB="${{ github.job }}" \
           -e GITHUB_PROVIDER="GITHUB" \
-          -e GITHUB_WORKSPACE="${{ github.workspace }}" \
+          -e GITHUB_WORKSPACE="$GITHUB_WORKSPACE" \
           -v $GITHUB_OUTPUT:$GITHUB_OUTPUT \
           -e GITHUB_OUTPUT="$GITHUB_OUTPUT" \
           -e GITHUB_ENV="$GITHUB_ENV" \
@@ -99,7 +99,7 @@ runs:
           -e GITHUB_SERVER_URL="${{ github.server_url }}/${{ github.repository }}" \
           -e GITHUB_JOB="${{ github.job }}" \
           -e GITHUB_PROVIDER="GITHUB" \
-          -e GITHUB_WORKSPACE="${{ github.workspace }}" \
+          -e GITHUB_WORKSPACE="$GITHUB_WORKSPACE" \
           -v $GITHUB_OUTPUT:$GITHUB_OUTPUT \
           -e GITHUB_OUTPUT="$GITHUB_OUTPUT" \
           -e GITHUB_ENV="$GITHUB_ENV" \
